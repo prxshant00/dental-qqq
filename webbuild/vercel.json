@@ -1,12 +1,15 @@
 {
-  "buildCommand": "npm run build",
-  "outputDirectory": "dist",
+  "buildCommand": "npm install && npm run build",
+  "outputDirectory": "./dist",
   "devCommand": "npm run dev",
-  "env": {},
+  "framework": "vite",
   "cleanUrls": true,
   "trailingSlash": false,
-  "framework": "vite",
+  "redirects": [],
   "rewrites": [
-    { "source": "/(.*)", "destination": "/index.html" }
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
   ]
 }
